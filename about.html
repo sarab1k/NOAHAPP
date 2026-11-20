@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>تطبيق NOAH - متجر العرض الإلكتروني</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-page: #f5f5f7;
+            --bg-surface: #ffffff;
+            --bg-subtle: #f0f0f2;
+            --text-primary: #1c1c1e;
+            --text-secondary: #48484a;
+            --border-color: #d1d1d6;
+            --btn-bg: #1c1c1e;
+            --btn-text: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-page: #121212;
+                --bg-surface: #1c1c1e;
+                --bg-subtle: #262629;
+                --text-primary: #f2f2f7;
+                --text-secondary: #aeaeb2;
+                --border-color: #38383a;
+                --btn-bg: #f2f2f7;
+                --btn-text: #121212;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 20px auto;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 40px 28px;
+        }
+
+        .hero {
+            text-align: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+
+        .app-icon {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto 16px;
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 580px;
+            margin: 0 auto 24px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 12px 26px;
+            border-radius: 12px;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background-color: var(--bg-subtle);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border-radius: 12px;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            opacity: 0.85;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            margin-bottom: 16px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 18px 20px;
+        }
+
+        .card h3 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .partnership-banner {
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-top: 10px;
+        }
+
+        .partnership-banner h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .partnership-banner p {
+            font-size: 0.94rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 36px;
+            padding-top: 22px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .footer a {
+            color: var(--text-primary);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 26px 18px;
+                margin: 8px auto;
+            }
+            h1 {
+                font-size: 1.65rem;
+            }
+            .actions a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="hero">
+            <div class="app-icon">NOAH</div>
+            <h1>تطبيق NOAH</h1>
+            <p class="tagline">
+                منصة عرض إلكترونية منظمة لاستعراض الساعات، النظارات، الإكسسوارات، الملابس، والمستلزمات المنزلية بخصوصية تامة وتواصل مباشر.
+            </p>
+            <div class="actions">
+                <a href="#features" class="btn-primary">اكتشف مميزات التطبيق</a>
+                <a href="https://sarab1k.github.io/NOAHAPP/" class="btn-secondary">سياسة الخصوصية</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">أقسام وفئات المتجر</h2>
+            <p class="section-desc">
+                يقتصر العرض داخل تطبيق NOAH على فئات محددة ومنظمة لضمان وضوح التجربة وسهولة الوصول للمنتج المطلوب:
+            </p>
+            <div class="categories">
+                <span class="tag">الساعات</span>
+                <span class="tag">النظارات</span>
+                <span class="tag">الإكسسوارات</span>
+                <span class="tag">الملابس</span>
+                <span class="tag">الأغراض المنزلية</span>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <h2 class="section-title">لماذا تطبيق NOAH؟</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>خصوصية كاملة بدون بيانات</h3>
+                    <p>تصفح التطبيق مباشرة دون الحاجة إلى تسجيل دخول، رقم هاتف، بريد إلكتروني، أو تحديد الموقع الجغرافي.</p>
+                </div>
+                <div class="card">
+                    <h3>تواصل مباشر مع العارض</h3>
+                    <p>يحتوي كل منشور على حسابات التواصل الخاصة بالبائع لإتمام الاستفسار والاتفاق خارج التطبيق بكل حرية.</p>
+                </div>
+                <div class="card">
+                    <h3>تصفح خفيف وسريع</h3>
+                    <p>لا يستهلك مساحة التخزين الداخلية لهاتفك ولا يطلب أذونات غير ضرورية، ويعمل بسلاسة تامة.</p>
+                </div>
+                <div class="card">
+                    <h3>عروض منظمة ومحددة</h3>
+                    <p>بيئة عرض مرتبة تركز حصراً على الإكسسوارات والملابس والمستلزمات المنزلية بعيداً عن الفوضى.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="partnership-banner">
+                <h3>إدارة وشراكة رسمية</h3>
+                <p>
+                    تم إنشاء وتطوير تطبيق <strong>NOAH</strong> بشراكة رسمية بين <strong>نوح</strong> و<strong>الست ورود</strong> لتقديم دليل عرض موثوق يحترم خصوصية المستخدمين.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>تطبيق <strong>NOAH</strong> — شراكة رسمية بين <strong>نوح</strong> و<strong>الست ورود</strong> © 2026</p>
+            <p style="margin-top: 6px;">
+                <a href="https://sarab1k.github.io/NOAHAPP/">سياسة الخصوصية وشروط الاستخدام</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
