@@ -37,11 +37,15 @@
     "desc": "كيفو حبيبو",
     "shortDesc": "كيفو حبيبو",
     "fullDesc": "كيفو حبيبو",
-    "imageUrl": "",
-    "mainImageUrl": "",
-    "thumbImageUrl": "",
+    "imageUrl": "https:\/\/raw.githubusercontent.com\/sarab1k\/NOAHAPP\/main\/images\/sample_post.jpg",
+    "mainImageUrl": "https:\/\/raw.githubusercontent.com\/sarab1k\/NOAHAPP\/main\/images\/sample_post.jpg",
+    "thumbImageUrl": "https:\/\/raw.githubusercontent.com\/sarab1k\/NOAHAPP\/main\/images\/sample_post.jpg",
     "link": "",
     "targetUrl": "",
+    "albumUrls": [
+      "https:\/\/raw.githubusercontent.com\/sarab1k\/NOAHAPP\/main\/images\/sample_post.jpg",
+      "https:\/\/raw.githubusercontent.com\/sarab1k\/NOAHAPP\/main\/images\/sample_post.jpg"
+    ],
     "deleted": false
   }
 ]
