@@ -1,14 +1,1 @@
-{
-  "msgId": 10,
-  "type": "#post",
-  "title": "ساعة رياضية حديثة",
-  "shortDesc": "بطارية تدوم طويلاً وشاشة واضحة",
-  "subInfo": "متوفر الآن",
-  "fullDesc": "المواصفات الكاملة وتفاصيل المنتج عند الضغط على البطاقة أو زر العرض.",
-  "price": "30,000 د.ع",
-  "imageUrl": "https://sarab1k.github.io/NOAHAPP/watch1.jpg",
-  "albumUrls": [
-    "https://sarab1k.github.io/NOAHAPP/watch1.jpg",
-    "https://sarab1k.github.io/NOAHAPP/watch2.jpg"
-  ]
-}
+{}
