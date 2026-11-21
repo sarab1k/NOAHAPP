@@ -1,0 +1,37 @@
+[
+  {
+    "msgId": 1,
+    "type": "#btn",
+    "targetUrl": "https://sarab1k.github.io",
+    "imageUrl": "https://via.placeholder.com/800x400.png?text=NOAH+Banner"
+  },
+  {
+    "msgId": 2,
+    "type": "#post",
+    "title": "منتج تجريبي",
+    "shortDesc": "وصف مختصر للمنتج",
+    "subInfo": "متوفر الآن",
+    "fullDesc": "تفاصيل المنتج الكاملة تظهر عند الضغط على البطاقة.",
+    "price": "25,000 د.ع",
+    "imageUrl": "https://via.placeholder.com/400x400.png?text=Product",
+    "albumUrls": [
+      "https://via.placeholder.com/600x400.png?text=Photo+1",
+      "https://via.placeholder.com/600x400.png?text=Photo+2"
+    ]
+  },
+  {
+    "msgId": 3,
+    "type": "#link",
+    "title": "عرض خاص",
+    "desc": "تفاصيل العرض أو الرابط",
+    "targetUrl": "https://wa.me/9647893022669",
+    "mainImageUrl": "https://via.placeholder.com/800x400.png?text=Offer",
+    "thumbImageUrl": "https://via.placeholder.com/200x200.png?text=Thumb"
+  },
+  {
+    "msgId": 4,
+    "type": "#اشعار",
+    "text": "مرحباً بكم! تم تفعيل نظام النشر الجديد بنجاح.",
+    "link": "https://sarab1k.github.io"
+  }
+]
