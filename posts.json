@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "msgId": 1795236686106,
+    "type": "#BTN",
+    "title": "",
+    "text": "",
+    "desc": "",
+    "shortDesc": "",
+    "fullDesc": "",
+    "imageUrl": "https:\/\/images.unsplash.com\/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1080&q=80",
+    "mainImageUrl": "https:\/\/images.unsplash.com\/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1080&q=80",
+    "thumbImageUrl": "https:\/\/images.unsplash.com\/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1080&q=80",
+    "link": "",
+    "targetUrl": "",
+    "albumUrls": [
+      "https:\/\/images.unsplash.com\/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1080&q=80",
+      "https:\/\/images.unsplash.com\/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1080&q=80"
+    ],
+    "deleted": false
+  }
+]
