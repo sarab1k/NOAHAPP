@@ -35,3 +35,17 @@
     "link": "https://sarab1k.github.io"
   }
 ]
+{
+  "msgId": 10,
+  "type": "#post",
+  "title": "ساعة رياضية حديثة",
+  "shortDesc": "بطارية تدوم طويلاً وشاشة واضحة",
+  "subInfo": "متوفرة الآن",
+  "fullDesc": "مواصفات كاملة وتفاصيل المنتج تظهر عند الضغط على البطاقة أو زر عرض.",
+  "price": "30,000 د.ع",
+  "imageUrl": "https://sarab1k.github.io/NOAHAPP/watch1.jpg",
+  "albumUrls": [
+    "https://sarab1k.github.io/NOAHAPP/watch1.jpg",
+    "https://sarab1k.github.io/NOAHAPP/watch2.jpg"
+  ]
+}
